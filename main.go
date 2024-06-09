@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"golang-roadmap/api"
 	"golang-roadmap/blank_identifier"
 	"golang-roadmap/functions"
 	"golang-roadmap/methods"
@@ -22,4 +23,5 @@ func main() {
 	methods.Run()
 	functions.Run()
 	pointers.Run()
+	api.Run()
 }
