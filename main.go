@@ -7,6 +7,7 @@ import (
 	"golang-roadmap/functions"
 	"golang-roadmap/methods"
 	"golang-roadmap/pointers"
+	"golang-roadmap/structs"
 	"golang-roadmap/uuid_generator"
 	"golang-roadmap/variables"
 )
@@ -23,5 +24,6 @@ func main() {
 	methods.Run()
 	functions.Run()
 	pointers.Run()
+	structs.Run()
 	api.Run()
 }
