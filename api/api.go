@@ -63,14 +63,14 @@ func dashboardHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 // Health check handler
-func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
+func HealthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	response := HealthyData{Up: true}
 
 	sendJSONResponse(w, http.StatusOK, response)
 }
 
 // Middleware to set Content-Type header
-func jsonMiddleware(next http.Handler) http.Handler {
+func JsonMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		next.ServeHTTP(w, r)
@@ -84,9 +84,9 @@ func Run() {
 
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", dashboardHandler)
-	mux.HandleFunc("/health", healthCheckHandler)
+	mux.HandleFunc("/health", HealthCheckHandler)
 
 	fmt.Println("❯ Listening on http://localhost:8081")
 	fmt.Println("❯ Access http://localhost:8081/health to check the health of the server")
-	http.ListenAndServe(":8081", jsonMiddleware(mux))
+	http.ListenAndServe(":8081", JsonMiddleware(mux))
 }
