@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"golang-roadmap/api"
 	"golang-roadmap/blank_identifier"
+	"golang-roadmap/channels"
 	"golang-roadmap/functions"
+	"golang-roadmap/goroutines"
 	"golang-roadmap/methods"
 	"golang-roadmap/pointers"
 	"golang-roadmap/structs"
@@ -25,5 +27,7 @@ func main() {
 	functions.Run()
 	pointers.Run()
 	structs.Run()
+	goroutines.Run()
+	channels.Run()
 	api.Run()
 }
