@@ -125,6 +125,7 @@ func Run() {
 	fmt.Println("❯ channels start")
 
 	bufferedChannel()
+	channelSynchronization()
 
 	go couter("goroutine-a")
 	go couter("goroutine-b")
