@@ -55,3 +55,6 @@ go test -v ./math/int_operations_test.go
 ```bash
 go test -v ./math/int_operations_test.go -run TestAddInt
 ```
+
+### Project Structure
+See [project structure](https://github.com/jrfernandodasilva/golang-roadmap/wiki/Project-Structure) suggestion in Wiki
