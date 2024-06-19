@@ -6,6 +6,7 @@ import (
 	"golang-roadmap/blank_identifier"
 	"golang-roadmap/channels"
 	"golang-roadmap/functions"
+	"golang-roadmap/generics"
 	"golang-roadmap/goroutines"
 	"golang-roadmap/methods"
 	"golang-roadmap/pointers"
@@ -27,6 +28,7 @@ func main() {
 	functions.Run()
 	pointers.Run()
 	structs.Run()
+	generics.Run()
 	goroutines.Run()
 	channels.Run()
 	api.Run()
