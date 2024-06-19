@@ -1,3 +1,6 @@
+
+[![license](https://img.shields.io/github/license/jrfernandodasilva/golang-roadmap.svg)](LICENSE)
+
 ### Init project module 
 ```bash
 go mod init golang-roadmap
