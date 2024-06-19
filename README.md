@@ -1,12 +1,14 @@
 
-[![license](https://img.shields.io/github/license/jrfernandodasilva/golang-roadmap.svg)](LICENSE)
+# Golang roadmap
+
+[![License](https://img.shields.io/github/license/jrfernandodasilva/golang-roadmap.svg)](LICENSE)
 [![Written in Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](https://golang.org/)
 [![GitHub release](https://img.shields.io/github/v/release/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Downloads](https://img.shields.io/github/downloads/jrfernandodasilva/golang-roadmap/total.svg?v1)](https://github.com/jrfernandodasilva/golang-roadmap/releases)
 [![Contributors](https://img.shields.io/github/contributors/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/graphs/contributors)
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://github.com/jrfernandodasilva/golang-roadmap/wiki)
-[![Última Atualização](https://img.shields.io/github/last-commit/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/commits/main)
+[![Last Update](https://img.shields.io/github/last-commit/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/commits/main)
 
 ### Init project module 
 ```bash
