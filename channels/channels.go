@@ -96,15 +96,6 @@ func channelForever() {
 	<-forever
 }
 
-func worker(workerId int, msg chan int) { //, done chan bool) {
-	fmt.Println("❯ worker", workerId)
-	for res := range msg {
-		fmt.Println("Worker", workerId, "Msg", res)
-		time.Sleep(time.Second)
-		// done <- true // signal that the task is done
-	}
-}
-
 func workerForever(workerId int, msg chan int) {
 	fmt.Println("❯ workerForever", workerId)
 	for { // infinite loop
@@ -124,6 +115,7 @@ func Run() {
 
 	fmt.Println("❯ channels start")
 
+	msgChannel := loadBalancer()
 	bufferedChannel()
 	channelSynchronization()
 
@@ -135,19 +127,6 @@ func Run() {
 	singleProcess()
 	channel()
 	channelSelect()
-
-	msg := make(chan int)
-	// done := make(chan bool) // channel for signaling when all workers are done
-	go worker(1, msg) // , done)
-	go worker(2, msg) // , done)
-	go worker(3, msg) // , done)
-	go worker(4, msg) // , done)
-	go worker(5, msg) // , done)
-	go worker(6, msg) // , done)
-	go worker(7, msg) // , done)
-	for i := 0; i < 10; i++ {
-		msg <- i
-	}
 
 	msgForever := make(chan int)
 	go workerForever(44, msgForever) // , done)
@@ -164,10 +143,10 @@ func Run() {
 	go func() {
 		time.Sleep(time.Second * 2)
 		msgForever <- 99
-		msg <- 15
+		msgChannel <- 15
 		time.Sleep(time.Second * 5)
 		msgForever <- 77
-		close(msg)
+		close(msgChannel)
 		close(msgForever)
 	}()
 
