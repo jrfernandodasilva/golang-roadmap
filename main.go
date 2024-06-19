@@ -10,6 +10,7 @@ import (
 	"golang-roadmap/goroutines"
 	"golang-roadmap/methods"
 	"golang-roadmap/pointers"
+	"golang-roadmap/process"
 	"golang-roadmap/structs"
 	"golang-roadmap/uuid_generator"
 	"golang-roadmap/variables"
@@ -21,6 +22,7 @@ func main() {
 	fmt.Println("=====================================")
 	fmt.Println("call another packages")
 
+	process.Run()
 	variables.Run()
 	uuid_generator.Run()
 	blank_identifier.Run()
