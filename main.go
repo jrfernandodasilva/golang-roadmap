@@ -11,6 +11,7 @@ import (
 	"golang-roadmap/methods"
 	"golang-roadmap/pointers"
 	"golang-roadmap/process"
+	"golang-roadmap/reflection"
 	"golang-roadmap/structs"
 	"golang-roadmap/uuid_generator"
 	"golang-roadmap/variables"
@@ -30,6 +31,7 @@ func main() {
 	functions.Run()
 	pointers.Run()
 	structs.Run()
+	reflection.Run()
 	generics.Run()
 	goroutines.Run()
 	channels.Run()
