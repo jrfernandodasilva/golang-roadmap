@@ -15,17 +15,12 @@
 
 ### Init project module 
 ```bash
-go mod init golang-roadmap
+go mod init github.com/jrfernandodasilva/golang-roadmap
 ```
 
 ### Check modules dependencies
 ```bash
 go mod tidy -v
-```
-
-### Init project module 
-```bash
-go mod init golang-roadmap
 ```
 
 ### Run
