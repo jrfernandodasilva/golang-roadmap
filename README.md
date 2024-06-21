@@ -71,18 +71,11 @@ See [project structure](https://github.com/jrfernandodasilva/golang-roadmap/wiki
 
 ## Docker Commands
 
-- **build**: Builds the container image from the Dockerfile.
-- **run**: To runs the container image.
-- **sh**: To open a shell in the container.
-- **logs**: To view the logs of the container.
-- **stop**: To stop the container.
-- **rm**: To remove the container.
-
-| Action | Command                                                                |
-|--------|------------------------------------------------------------------------|
-| build  | `docker build -t golang-roadmap:unstable .`                            |
-| run    | `docker run -d --rm --name golang-roadmap-app golang-roadmap:unstable` |
-| sh     | `docker exec -it golang-roadmap-app sh`                                |
-| logs   | `docker logs golang-roadmap-app`                                       |
-| stop   | `docker stop golang-roadmap-app`                                       |
-| rm     | `docker rm golang-roadmap-app`                                         |
+| Action | Description                                     | Command                                                                |
+|--------|-------------------------------------------------|------------------------------------------------------------------------|
+| build  | Builds the container image from the Dockerfile. | `docker build -t golang-roadmap:unstable .`                            |
+| run    | To runs the container image.                    | `docker run -d --rm --name golang-roadmap-app golang-roadmap:unstable` |
+| sh     | To open a shell in the container.               | `docker exec -it golang-roadmap-app sh`                                |
+| logs   | To view the logs of the container.              | `docker logs golang-roadmap-app`                                       |
+| stop   | To stop the container.                          | `docker stop golang-roadmap-app`                                       |
+| rm     | To remove the container.                        | `docker rm golang-roadmap-app`                                         |
