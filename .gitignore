@@ -20,3 +20,7 @@
 .editorconfig
 nbproject
 *.sublime-project
+
+# Builded binaries
+golang-roadmap
+golang-roadmap.exe
