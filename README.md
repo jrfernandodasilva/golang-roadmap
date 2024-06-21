@@ -66,6 +66,12 @@ go test -v ./math/int_operations_test.go
 go test -v ./math/int_operations_test.go -run TestAddInt
 ```
 
+## Benchmark Tests
+```bash
+cd benchmark
+go test -v -bench=. -benchmem
+```
+
 ## Project Structure
 See [project structure](https://github.com/jrfernandodasilva/golang-roadmap/wiki/Project-Structure) suggestion in Wiki
 
