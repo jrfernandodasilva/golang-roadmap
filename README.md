@@ -73,9 +73,9 @@ See [project structure](https://github.com/jrfernandodasilva/golang-roadmap/wiki
 
 | Action | Description                                     | Command                                                                |
 |--------|-------------------------------------------------|------------------------------------------------------------------------|
-| build  | Builds the container image from the Dockerfile. | `docker build -t golang-roadmap:unstable .`                            |
-| run    | To runs the container image.                    | `docker run -d --rm --name golang-roadmap-app golang-roadmap:unstable` |
-| sh     | To open a shell in the container.               | `docker exec -it golang-roadmap-app sh`                                |
-| logs   | To view the logs of the container.              | `docker logs golang-roadmap-app`                                       |
-| stop   | To stop the container.                          | `docker stop golang-roadmap-app`                                       |
-| rm     | To remove the container.                        | `docker rm golang-roadmap-app`                                         |
+| build  | Builds the container image from the Dockerfile  | `docker build -t golang-roadmap:unstable .`                            |
+| run    | To runs the container image                     | `docker run -d --rm --name golang-roadmap-app golang-roadmap:unstable` |
+| sh     | To open a shell in the container                | `docker exec -it golang-roadmap-app sh`                                |
+| logs   | To view the logs of the container               | `docker logs golang-roadmap-app`                                       |
+| stop   | To stop the container                           | `docker stop golang-roadmap-app`                                       |
+| rm     | To remove the container                         | `docker rm golang-roadmap-app`                                         |
