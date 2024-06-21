@@ -5,10 +5,13 @@
 [![Written in Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](https://golang.org/)
 [![GitHub release](https://img.shields.io/github/v/release/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/releases)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Downloads](https://img.shields.io/github/downloads/jrfernandodasilva/golang-roadmap/total.svg?v1)](https://github.com/jrfernandodasilva/golang-roadmap/releases)
 [![Contributors](https://img.shields.io/github/contributors/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/graphs/contributors)
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://github.com/jrfernandodasilva/golang-roadmap/wiki)
 [![Last Update](https://img.shields.io/github/last-commit/jrfernandodasilva/golang-roadmap.svg)](https://github.com/jrfernandodasilva/golang-roadmap/commits/main)
+
+## Init
 
 ### Init project module 
 ```bash
@@ -68,5 +71,23 @@ go test -v ./math/int_operations_test.go
 go test -v ./math/int_operations_test.go -run TestAddInt
 ```
 
-### Project Structure
+## Project Structure
 See [project structure](https://github.com/jrfernandodasilva/golang-roadmap/wiki/Project-Structure) suggestion in Wiki
+
+## Docker Commands
+
+- **build**: Builds the container image from the Dockerfile.
+- **run**: To runs the container image.
+- **sh**: To open a shell in the container.
+- **logs**: To view the logs of the container.
+- **stop**: To stop the container.
+- **rm**: To remove the container.
+
+| Action | Command                                                                |
+|--------|------------------------------------------------------------------------|
+| build  | `docker build -t golang-roadmap:unstable .`                            |
+| run    | `docker run -d --rm --name golang-roadmap-app golang-roadmap:unstable` |
+| sh     | `docker exec -it golang-roadmap-app sh`                                |
+| logs   | `docker logs golang-roadmap-app`                                       |
+| stop   | `docker stop golang-roadmap-app`                                       |
+| rm     | `docker rm golang-roadmap-app`                                         |
