@@ -7,11 +7,7 @@ services:
     container_name: golang-roadmap-app
     platform: 'linux/amd64'
     command: sh -c "build/local/start-container.sh"
-    extra_hosts:
-      - 'host.docker.internal:host-gateway'
     ports:
       - '${APP_PORT:-8081}:80'
-    # environment:
-    #   WWWGROUP: '${WWWGROUP}' 
     volumes:
       - ./:/app
