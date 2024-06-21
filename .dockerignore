@@ -24,4 +24,11 @@ golang-roadmap.exe
 
 # Unnecessary folders/files to build step
 Makefile
+LICENSE
+README.md
 /.github
+/.git
+/build/local
+.gitignore
+.dockerignore
+Dockerfile
