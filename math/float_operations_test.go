@@ -1,9 +1,10 @@
 package math_test
 
 import (
-	my_math "golang-roadmap/math"
 	"math"
 	"testing"
+
+	my_math "github.com/jrfernandodasilva/golang-roadmap/math"
 )
 
 func TestMultiplyFloat(t *testing.T) {

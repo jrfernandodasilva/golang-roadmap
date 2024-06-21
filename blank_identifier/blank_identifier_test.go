@@ -1,8 +1,9 @@
 package blank_identifier_test
 
 import (
-	blankid "golang-roadmap/blank_identifier"
 	"testing"
+
+	blankid "github.com/jrfernandodasilva/golang-roadmap/blank_identifier"
 )
 
 func TestSum(t *testing.T) {

@@ -2,19 +2,20 @@ package main
 
 import (
 	"fmt"
-	"golang-roadmap/api"
-	"golang-roadmap/blank_identifier"
-	"golang-roadmap/channels"
-	"golang-roadmap/functions"
-	"golang-roadmap/generics"
-	"golang-roadmap/goroutines"
-	"golang-roadmap/methods"
-	"golang-roadmap/pointers"
-	"golang-roadmap/process"
-	"golang-roadmap/reflection"
-	"golang-roadmap/structs"
-	"golang-roadmap/uuid_generator"
-	"golang-roadmap/variables"
+
+	"github.com/jrfernandodasilva/golang-roadmap/api"
+	"github.com/jrfernandodasilva/golang-roadmap/blank_identifier"
+	"github.com/jrfernandodasilva/golang-roadmap/channels"
+	"github.com/jrfernandodasilva/golang-roadmap/functions"
+	"github.com/jrfernandodasilva/golang-roadmap/generics"
+	"github.com/jrfernandodasilva/golang-roadmap/goroutines"
+	"github.com/jrfernandodasilva/golang-roadmap/methods"
+	"github.com/jrfernandodasilva/golang-roadmap/pointers"
+	"github.com/jrfernandodasilva/golang-roadmap/process"
+	"github.com/jrfernandodasilva/golang-roadmap/reflection"
+	"github.com/jrfernandodasilva/golang-roadmap/structs"
+	"github.com/jrfernandodasilva/golang-roadmap/uuid_generator"
+	"github.com/jrfernandodasilva/golang-roadmap/variables"
 )
 
 func main() {

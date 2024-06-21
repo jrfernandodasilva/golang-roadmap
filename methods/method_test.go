@@ -1,8 +1,9 @@
 package methods_test
 
 import (
-	"golang-roadmap/methods"
 	"testing"
+
+	"github.com/jrfernandodasilva/golang-roadmap/methods"
 )
 
 func TestCar(t *testing.T) {

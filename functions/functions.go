@@ -2,7 +2,8 @@ package functions
 
 import (
 	"fmt"
-	"golang-roadmap/math"
+
+	"github.com/jrfernandodasilva/golang-roadmap/math"
 )
 
 func Run() {

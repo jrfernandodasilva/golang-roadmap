@@ -1,8 +1,9 @@
 package math_test
 
 import (
-	"golang-roadmap/math"
 	"testing"
+
+	"github.com/jrfernandodasilva/golang-roadmap/math"
 )
 
 func TestMultiplyInt(t *testing.T) {

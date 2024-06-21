@@ -1,8 +1,9 @@
 package functions_test
 
 import (
-	"golang-roadmap/functions"
 	"testing"
+
+	"github.com/jrfernandodasilva/golang-roadmap/functions"
 )
 
 func TestSum(t *testing.T) {

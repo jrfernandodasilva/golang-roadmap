@@ -4,10 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"golang-roadmap/api"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/jrfernandodasilva/golang-roadmap/api"
 )
 
 func TestHealthCheckHandler(t *testing.T) {
@@ -41,6 +42,6 @@ func TestHealthCheckHandler(t *testing.T) {
 	// Assert that the response is `{"up": true}`
 	expected := api.HealthyData{Up: true}
 	if !bytes.Equal(rec.Body.Bytes(), []byte(fmt.Sprintf(`{"up":%t}`, expected.Up))) {
-		t.Errorf("Expected response: %v, got: %v", expected, response) 
+		t.Errorf("Expected response: %v, got: %v", expected, response)
 	}
 }
